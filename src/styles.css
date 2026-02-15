@@ -1,0 +1,367 @@
+﻿body {
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+margin: 0;
+box-sizing: border-box;
+
+}
+
+.introduction {
+text-align: left;
+padding-left: 15%;
+max-width: 100vw;
+letter-spacing: 0.5px;
+font-size: 16px;
+line-height: 1.6;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+
+}
+
+.intro-child-1{
+display: inline-block;
+max-width: 40%;
+
+}
+
+.intro-child2{
+
+
+padding-right: 15%;
+margin-top: 5%;
+}
+
+a{
+text-decoration: none;
+color: black;
+}
+
+h1 {
+font-size: 24px;
+border: solid, 1px;
+width: 11.5%;
+border-radius: 4px;
+border-color: aquamarine;
+font-family: Inter, system-ui, sans-serif;
+text-transform: lowercase;
+transition: transform 0.1s ease-in-out;
+font-weight: normal;
+display: block;
+padding-bottom: -15px;
+
+
+margin-left: 15%;
+}
+
+h1:hover{
+transform: scale(0.95);
+}
+
+.intro-h2{
+
+}
+h2 {
+font-size: 48px;
+margin-bottom: -10px;
+}
+
+p {
+font-family: Arial, serif;
+font-size: 21px;
+
+}
+
+.portrait{
+width: 350px;
+height: 350px;
+border-radius: 5px;
+}
+
+svg {
+width: 60px;
+height: 60px;
+}
+
+.links img{
+width: 60px;
+height: 60px;
+}
+
+#top-links{
+margin-left: 15%;
+}
+.projects-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+
+
+gap: 25px;
+padding-left: 15%;
+padding-right: 15%;
+}
+.h2-projects {
+text-align: left;
+display: block;
+padding-left: 15%;
+margin-bottom: 20px;
+
+}
+
+.project-child a {
+font-family: Arial;
+font-weight: bold;
+font-size: 21px;
+
+}
+
+.project-child:hover{
+transform: scale(1.1);
+background-color: aquamarine;
+}
+
+.project-child {
+background-color: #eee;
+transition: transform 0.1s ease-in-out;
+border-radius: 3px;
+box-sizing:border-box;
+padding: 15px;
+padding-top: 5px;
+font-family: Arial;
+display: flex;
+flex-direction: column;
+aspect-ratio: .1 / .1;
+
+}
+
+.project-child p {
+font-size: 14px;
+}
+
+.languages-grid {
+margin-top: auto;
+display: flex;
+flex-wrap: wrap;
+gap: 5px;
+}
+
+.csharp-class, .unity-class, .net-class, .entity-framework, .css, .html {
+display: inline-block;
+margin-right: 5px;
+border-radius: 7px;
+padding: 5px;
+font-size: 12px;
+font-family: Arial;
+align-self: flex-end;
+color: lightgrey;
+}
+
+.unity-class {
+background-color: darkgrey;
+
+}
+
+.net-class, .entity-framework, .csharp-class {
+background-color: #512BD4;
+}
+
+.html {
+
+
+background-color: #FFA500;
+}
+
+.css {
+
+
+background-color: #1572B6;
+}
+
+.closing-section{
+padding-left: 15%;
+
+}
+
+img {
+width: 24px;
+height: 24px;
+margin-right: 5px;
+}
+
+.email-p .location-flex-item{
+display: flex;
+align-items: center;
+
+}
+.email-p img{
+vertical-align: text-bottom;
+}
+
+.email-p a {
+border-radius: 5px;
+padding: 3px;
+transition: transform 0.1s ease-in-out;
+}
+
+
+.email-p a:hover {
+    transform: scale(0.95)
+}
+.links img:hover {
+color: aquamarine;
+transform: scale(1.1);
+
+}
+
+.links svg:hover {
+color: aquamarine;
+transform: scale(1.1);
+
+}
+
+.social-links {
+align-self:flex-start;
+}
+
+.footer-div {
+margin-top: auto;
+padding: 15px 20px;
+background-color: #ffffff;
+border-top: 1px solid #dee2e6;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 10px;
+}
+
+.languages-grid {
+margin-top: auto;
+display: flex;
+flex-wrap: wrap;
+gap: 5px; /* This provides spacing between language tags */
+}
+
+.csharp-class, .unity-class, .net-class, .entity-framework, .css, .html {
+display: inline-block; /* Good, but redundant if .languages-grid is flex /
+margin-right: 5px; / Redundant if using gap /
+border-radius: 7px;
+padding: 5px;
+font-size: 12px;
+font-family: Arial;
+/ align-self: flex-end; / / This might be useful if you have items of different heights within the parent /
+color: lightgrey; / This is text color, not background */
+}
+
+.unity-class {
+background-color: darkgrey;
+}
+
+.net-class, .entity-framework, .csharp-class {
+background-color: #512BD4;
+}
+
+.html {
+background-color: #FFA500; /* Orange */
+}
+
+.css {
+background-color: #1572B6; /* Blue */
+}
+
+.languages-grid p { /* Targeting the p tags created by the map /
+display: inline-block; / Keeps them as blocks but allows for flex alignment /
+border-radius: 7px;
+padding: 5px 10px; / Increased padding for better look /
+font-size: 12px;
+font-family: Arial, sans-serif; / Added sans-serif fallback /
+margin: 0; / Remove default margin if any /
+font-weight: bold; / Make language names stand out /
+color: white; / Default text color for most backgrounds /
+text-transform: uppercase; / Consistent look /
+letter-spacing: 0.5px; / Slight spacing */
+}
+
+
+
+
+.html {
+background-color: #e34f26; /* Stronger Orange */
+}
+
+.css {
+background-color: #1572B6; /* Blue */
+}
+
+.js-class, .javascript-class { /* Assuming you might use 'JS' or 'JavaScript' /
+background-color: #F7DF1E; / Yellow /
+color: black !important; / Text needs to be black on yellow */
+}
+
+.react-class {
+background-color: #61DAFB; /* Light Blue /
+color: black !important; / Text needs to be black on light blue */
+}
+
+.sql-class {
+background-color: #00758F; /* Teal/Blue */
+}
+
+
+
+
+.languages-grid .languages { 
+    display: inline-block;
+    border-radius: 7px;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background-color: #6c757d; 
+}
+
+
+.languages-grid .html { background-color: #e34f26; }
+.languages-grid .css { background-color: #1572B6; }
+.languages-grid .js-class { background-color: #F7DF1E; color: black; }
+.languages-grid .react-class { background-color: #61DAFB; color: black; }
+.languages-grid .sql-class { background-color: #00758F; }
+.languages-grid .csharp-class { background-color: #512BD4; }
+.languages-grid .net-class { background-color: #512BD4; } 
+
+
+
+.languages-grid .languages { /* Base class for all language tags */
+display: inline-block;
+border-radius: 7px;
+padding: 5px 10px;
+font-size: 12px;
+font-family: Arial, sans-serif;
+margin: 0;
+font-weight: bold;
+color: white;
+text-transform: uppercase;
+letter-spacing: 0.5px;
+background-color: #6c757d; /* Default background */
+}
+
+/* Specific language background colors will override the default */
+.languages-grid .html { background-color: #e34f26; }
+.languages-grid .css { background-color: #1572B6; }
+.languages-grid .js-class { background-color: #F7DF1E; color: black; }
+.languages-grid .react-class { background-color: #61DAFB; color: black; }
+.languages-grid .sql-class { background-color: #00758F; }
+.languages-grid .csharp-class { background-color: #512BD4; }
+.languages-grid .net-class { background-color: #512BD4; }
+
+
+.github-icon,
+.linkedin-icon {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.2s ease-in-out;
+}
