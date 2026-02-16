@@ -27,20 +27,20 @@ function TopLinks(){
         <a href="https://www.linkedin.com/in/derekschelberg/">
             
         <svg 
-        onMouseEnter={onHover} // Trigger the same color change
+        onMouseEnter={onHover} 
         height="56.693px" 
         width="56.693px" 
         viewBox="0 0 56.693 56.693" 
         style={{ cursor: 'pointer' }}
     >
         <g>
-            {/* 1. The Main Square (keeps the square shape) */}
+           
             <path 
-                fill="black" // Or whatever color you want the box to stay
+                fill="black" 
                 d="M49.265,4.667H7.145c-2.016,0-3.651,1.596-3.651,3.563v42.613c0,1.966,1.635,3.562,3.651,3.562h42.12 c2.019,0,3.654-1.597,3.654-3.562V8.23C52.919,6.262,51.283,4.667,49.265,4.667z" 
             />
 
-            {/* 2. The "in" letters (This part changes color!) */}
+          
             <path 
                 fill={colorItem} 
                 style={{ transition: 'fill 0.3s' }}

@@ -63,10 +63,3 @@ function ProjectCard({projectItem}){
 export default ProjectCard;
 
 
-/*
-<div className="project-child">
-            <br /><a href="https://github.com/DerekScott27/html_css_websites/blob/master/BoyToywebsite.html">BoyToy Product Website</a>
-            <p className="project-p">Full product website for the BoyToy brand.</p><div className="languages-grid"><p className="html">HTML</p><p className="css">CSS</p></div>
-        </div>
-
-*/

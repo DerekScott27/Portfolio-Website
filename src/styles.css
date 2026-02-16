@@ -1,355 +1,238 @@
-﻿body {
-display: flex;
-flex-direction: column;
-min-height: 100vh;
-margin: 0;
-box-sizing: border-box;
-
-}
-
-.introduction {
-text-align: left;
-padding-left: 15%;
-max-width: 100vw;
-letter-spacing: 0.5px;
-font-size: 16px;
-line-height: 1.6;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-
-}
-
-.intro-child-1{
-display: inline-block;
-max-width: 40%;
-
-}
-
-.intro-child2{
-
-
-padding-right: 15%;
-margin-top: 5%;
-}
-
-a{
-text-decoration: none;
-color: black;
+﻿
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, serif;
+    font-size: 16px;
 }
 
 h1 {
-font-size: 24px;
-border: solid, 1px;
-width: 11.5%;
-border-radius: 4px;
-border-color: aquamarine;
-font-family: Inter, system-ui, sans-serif;
-text-transform: lowercase;
-transition: transform 0.1s ease-in-out;
-font-weight: normal;
-display: block;
-padding-bottom: -15px;
-
-
-margin-left: 15%;
+    font-size: clamp(0.4rem, 1.5vw + 0.4rem, 1rem);
+    letter-spacing: 0.5px;
+    font-family: Inter, system-ui, sans-serif;
+    text-transform: lowercase;
+    transition: transform 0.1s ease-in-out;
+    font-weight: normal;
+    display: block;
+    border: solid 1px aquamarine;
+    border-radius: 4px;
+    margin-left: 15%;
+    margin-bottom: 1rem;
+    width: fit-content;
 }
 
-h1:hover{
-transform: scale(0.95);
+h1:hover {
+    transform: scale(0.95);
 }
 
-.intro-h2{
-
-}
 h2 {
-font-size: 48px;
-margin-bottom: -10px;
+    font-size: clamp(1.8rem, 3vw + 1rem, 3rem);
+    margin-bottom: 0.5rem;
 }
 
 p {
-font-family: Arial, serif;
-font-size: 21px;
-
+    font-size: clamp(1rem, 1vw + 0.8rem, 1.3rem);
+    line-height: 1.6;
+    margin-bottom: 1rem;
 }
 
-.portrait{
-width: 350px;
-height: 350px;
-border-radius: 5px;
+.introduction {
+    text-align: left;
+    padding-left: 10%;
+    padding-right: 10%;
+    max-width: 100vw;
+    letter-spacing: 0.5px;
+    font-size: 1rem;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-svg {
-width: 60px;
-height: 60px;
+.intro-child-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    text-align: center;
 }
 
-.links img{
-width: 60px;
-height: 60px;
+.intro-child2 {
+    padding-right: 0;
+    margin-top: 0;
+    text-align: center;
 }
 
-#top-links{
-margin-left: 15%;
-}
-.projects-grid {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-
-
-gap: 25px;
-padding-left: 15%;
-padding-right: 15%;
-}
-.h2-projects {
-text-align: left;
-display: block;
-padding-left: 15%;
-margin-bottom: 20px;
-
+.portrait {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    max-width: 80%;
+    margin: 0 auto;
 }
 
-.project-child a {
-font-family: Arial;
-font-weight: bold;
-font-size: 21px;
-
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.2s ease-in-out;
 }
 
-.project-child:hover{
-transform: scale(1.1);
-background-color: aquamarine;
+.introduction .h2-projects {
+    margin-bottom: 1.5rem;
 }
 
-.project-child {
-background-color: #eee;
-transition: transform 0.1s ease-in-out;
-border-radius: 3px;
-box-sizing:border-box;
-padding: 15px;
-padding-top: 5px;
-font-family: Arial;
-display: flex;
-flex-direction: column;
-aspect-ratio: .1 / .1;
-
+.introduction a {
+    color: black;
 }
 
-.project-child p {
-font-size: 14px;
+#top-links {
+    margin-left: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
 }
 
-.languages-grid {
-margin-top: auto;
-display: flex;
-flex-wrap: wrap;
-gap: 5px;
+#top-links a {
+    display: inline-flex;
+    align-items: center;
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: transform 0.2s ease-in-out;
 }
 
-.csharp-class, .unity-class, .net-class, .entity-framework, .css, .html {
-display: inline-block;
-margin-right: 5px;
-border-radius: 7px;
-padding: 5px;
-font-size: 12px;
-font-family: Arial;
-align-self: flex-end;
-color: lightgrey;
+#top-links a:hover {
+    transform: none;
 }
 
-.unity-class {
-background-color: darkgrey;
-
+.site-title {
+    margin-left: 0;
+    width: fit-content;
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    margin: 0;
 }
 
-.net-class, .entity-framework, .csharp-class {
-background-color: #512BD4;
+.site-header {
+    margin-left: 15%;
+    margin-bottom: 1rem;
 }
 
-.html {
-
-
-background-color: #FFA500;
+.links svg,
+.links img {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
 }
 
-.css {
-
-
-background-color: #1572B6;
+.github-icon, .linkedin-icon {
+    width: 32px;
+    height: 32px;
 }
 
-.closing-section{
-padding-left: 15%;
-
+.email-p .location-flex-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
-img {
-width: 24px;
-height: 24px;
-margin-right: 5px;
-}
-
-.email-p .location-flex-item{
-display: flex;
-align-items: center;
-
-}
-.email-p img{
-vertical-align: text-bottom;
+.email-p img {
+    vertical-align: middle;
+    margin-right: 10px;
 }
 
 .email-p a {
-border-radius: 5px;
-padding: 3px;
-transition: transform 0.1s ease-in-out;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: transform 0.1s ease-in-out;
+    background-color: #eee;
 }
-
 
 .email-p a:hover {
-    transform: scale(0.95)
-}
-.links img:hover {
-color: aquamarine;
-transform: scale(1.1);
-
+    transform: scale(1.05);
+    background-color: aquamarine;
 }
 
-.links svg:hover {
-color: aquamarine;
-transform: scale(1.1);
-
+.h2-projects {
+    text-align: left;
+    display: block;
+    padding-left: 10%;
+    margin-bottom: 1.5rem;
 }
 
-.social-links {
-align-self:flex-start;
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
-.footer-div {
-margin-top: auto;
-padding: 15px 20px;
-background-color: #ffffff;
-border-top: 1px solid #dee2e6;
-display: flex;
-flex-direction: column;
-align-items: center;
-gap: 10px;
+.project-child {
+    background-color: #eee;
+    transition: transform 0.1s ease-in-out;
+    border-radius: 3px;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 150px;
+}
+
+.project-child:hover {
+    transform: scale(1.03);
+    background-color: aquamarine;
+}
+
+.project-child a {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: black;
+}
+
+.project-child p {
+    font-size: 0.9rem;
+    flex-grow: 1;
 }
 
 .languages-grid {
-margin-top: auto;
-display: flex;
-flex-wrap: wrap;
-gap: 5px; /* This provides spacing between language tags */
+    margin-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding-top: 10px;
 }
 
-.csharp-class, .unity-class, .net-class, .entity-framework, .css, .html {
-display: inline-block; /* Good, but redundant if .languages-grid is flex /
-margin-right: 5px; / Redundant if using gap /
-border-radius: 7px;
-padding: 5px;
-font-size: 12px;
-font-family: Arial;
-/ align-self: flex-end; / / This might be useful if you have items of different heights within the parent /
-color: lightgrey; / This is text color, not background */
-}
-
-.unity-class {
-background-color: darkgrey;
-}
-
-.net-class, .entity-framework, .csharp-class {
-background-color: #512BD4;
-}
-
-.html {
-background-color: #FFA500; /* Orange */
-}
-
-.css {
-background-color: #1572B6; /* Blue */
-}
-
-.languages-grid p { /* Targeting the p tags created by the map /
-display: inline-block; / Keeps them as blocks but allows for flex alignment /
-border-radius: 7px;
-padding: 5px 10px; / Increased padding for better look /
-font-size: 12px;
-font-family: Arial, sans-serif; / Added sans-serif fallback /
-margin: 0; / Remove default margin if any /
-font-weight: bold; / Make language names stand out /
-color: white; / Default text color for most backgrounds /
-text-transform: uppercase; / Consistent look /
-letter-spacing: 0.5px; / Slight spacing */
-}
-
-
-
-
-.html {
-background-color: #e34f26; /* Stronger Orange */
-}
-
-.css {
-background-color: #1572B6; /* Blue */
-}
-
-.js-class, .javascript-class { /* Assuming you might use 'JS' or 'JavaScript' /
-background-color: #F7DF1E; / Yellow /
-color: black !important; / Text needs to be black on yellow */
-}
-
-.react-class {
-background-color: #61DAFB; /* Light Blue /
-color: black !important; / Text needs to be black on light blue */
-}
-
-.sql-class {
-background-color: #00758F; /* Teal/Blue */
-}
-
-
-
-
-.languages-grid .languages { 
-    display: inline-block;
+.languages-grid .languages {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    height: 28px;
     border-radius: 7px;
-    padding: 5px 10px;
-    font-size: 12px;
+    padding: 0;
+    font-size: 0.75rem;
     font-family: Arial, sans-serif;
-    margin: 0;
     font-weight: bold;
     color: white;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    background-color: #6c757d; 
+    box-sizing: border-box;
+    white-space: nowrap;
+    background-color: transparent;
+    flex: 0 0 110px;
 }
 
-
-.languages-grid .html { background-color: #e34f26; }
-.languages-grid .css { background-color: #1572B6; }
-.languages-grid .js-class { background-color: #F7DF1E; color: black; }
-.languages-grid .react-class { background-color: #61DAFB; color: black; }
-.languages-grid .sql-class { background-color: #00758F; }
-.languages-grid .csharp-class { background-color: #512BD4; }
-.languages-grid .net-class { background-color: #512BD4; } 
-
-
-
-.languages-grid .languages { /* Base class for all language tags */
-display: inline-block;
-border-radius: 7px;
-padding: 5px 10px;
-font-size: 12px;
-font-family: Arial, sans-serif;
-margin: 0;
-font-weight: bold;
-color: white;
-text-transform: uppercase;
-letter-spacing: 0.5px;
-background-color: #6c757d; /* Default background */
-}
-
-/* Specific language background colors will override the default */
 .languages-grid .html { background-color: #e34f26; }
 .languages-grid .css { background-color: #1572B6; }
 .languages-grid .js-class { background-color: #F7DF1E; color: black; }
@@ -357,11 +240,220 @@ background-color: #6c757d; /* Default background */
 .languages-grid .sql-class { background-color: #00758F; }
 .languages-grid .csharp-class { background-color: #512BD4; }
 .languages-grid .net-class { background-color: #512BD4; }
+.languages-grid .unity-class { background-color: darkgrey; }
+.languages-grid .entity-framework { background-color: #512BD4; }
 
+.closing-section {
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 30px;
+}
 
-.github-icon,
-.linkedin-icon {
-  width: 32px;
-  height: 32px;
-  transition: transform 0.2s ease-in-out;
+.closing-h2 {
+    font-size: clamp(1.8rem, 3vw + 1rem, 3rem);
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.closing-p {
+    font-size: clamp(1rem, 1vw + 0.8rem, 1.3rem);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.footer-div {
+    margin-top: auto;
+    padding: 15px 20px;
+    background-color: #ffffff;
+    border-top: 1px solid #dee2e6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.footer-info-row, .social-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 17px;
+    }
+
+    h1 {
+        font-size: clamp(0.5rem, 1.8vw + 0.5rem, 1.2rem);
+        margin-left: 15%;
+        width: fit-content;
+    }
+
+    .introduction {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 15%;
+        padding-right: 15%;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    .intro-child-1 {
+        max-width: 40%;
+        text-align: left;
+    }
+
+    .intro-child2 {
+        padding-right: 0;
+        margin-top: 5%;
+        text-align: left;
+    }
+
+    .portrait {
+        width: 350px;
+        height: 350px;
+        max-width: none;
+        margin: 0;
+    }
+
+    #top-links {
+        margin-left: 15%;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+    }
+
+    .h2-projects {
+      padding-left: 15%;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .project-child {
+      min-height: 200px;
+    }
+
+    .project-child p {
+        font-size: 1rem;
+    }
+
+    .footer-div {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px 40px;
+    }
+
+    .footer-info-row, .social-row {
+        width: auto;
+        justify-content: flex-start;
+    }
+
+    .social-row {
+        justify-content: flex-end;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: clamp(0.8rem, 2vw + 0.8rem, 1.8rem);
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.footer-div .email-p,
+.footer-div .location-flex-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.footer-div .email-p svg,
+.footer-div .email-p img,
+.footer-div .location-flex-item svg,
+.footer-div .location-flex-item img {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-div .email-p a {
+  background-color: #ffffff;
+  color: #000;
+  border-radius: 5px;
+  padding: 3px;
+  text-decoration: none;
+}
+
+.social-links-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.social-links-container .github-icon,
+.social-links-container .linkedin-icon {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s ease-in-out;
+    margin-right: 0;
+}
+
+.social-links-container a:hover {
+    background-color: transparent;
+    transform: none;
+}
+
+#top-links .social-link {
+    pointer-events: auto;
+}
+
+#top-links .social-link:hover {
+    background-color: transparent;
+    transform: none;
+}
+
+@media (min-width: 768px) {
+    #top-links {
+        justify-content: flex-start;
+    }
+}
+
+@media (min-width: 1200px) {
+    .social-links-container .github-icon,
+    .social-links-container .linkedin-icon {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+.languages-grid .languages {
+    display: inline-block;
+    border-radius: 7px;
+    padding: 6px 12px;
+    font-size: 0.75rem;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+   
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 0;
+    max-width: fit-content;
 }
